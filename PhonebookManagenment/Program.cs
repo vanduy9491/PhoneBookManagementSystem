@@ -112,14 +112,14 @@ namespace PhonebookManagenment
                 check = IsNumber(number);
             }
             phoneBook.InsertPhone(name, number);
-            phoneBook.ShowPhoneBook();
+            //phoneBook.ShowPhoneBook();
         }
         public static void RemovePhoneNumber()
         {
             Console.Write("Enter name:");
             string name = Console.ReadLine();
             phoneBook.RemovePhone(name);
-            phoneBook.ShowPhoneBook();
+            //phoneBook.ShowPhoneBook();
 
         }
         public static void UpdatePhoneNumber()
@@ -137,7 +137,7 @@ namespace PhonebookManagenment
                 check = IsNumber(number);
             }
             phoneBook.UpdatePhone(name,number);
-            phoneBook.ShowPhoneBook();
+            //phoneBook.ShowPhoneBook();
         }
         public static void SearchPhoneNumber()
         {
@@ -147,7 +147,7 @@ namespace PhonebookManagenment
         }
         public static void SortPhoneBook()
         {
-            phoneBook.ShowPhoneBook();
+            phoneBook.Sort();
         }
 
     }
