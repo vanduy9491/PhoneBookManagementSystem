@@ -104,20 +104,7 @@ namespace PhonebookManagenment
         }
         public void Sortt()
         {
-            int length = data.GetLength(0);
-            object[] arr1 = new object[length];
-            object[] arr2 = new object[length];
-            for (int i =0; i < length-1; i++)
-            {
-                arr1[i] = data[i, 0];
-                arr2[i] = data[i + 1, 0];
-            }
-            Array.Sort(arr2, arr1);
-            for (int i = 0; i < length-1; i++)
-            {
-                data[i, 0] = arr1[i];
-                    data[i + 1, 0] = arr2[i];
-            }
+           
         }
     }
 }
